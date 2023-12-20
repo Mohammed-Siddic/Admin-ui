@@ -1,0 +1,138 @@
+.App {
+  font-family: sans-serif;
+  left: 10%;
+  width: 80%;
+  position: relative;
+}
+
+.search {
+  width: 100%;
+  font-weight: 300;
+  border-radius: 4px;
+  padding: 8px;
+  margin: 3px;
+}
+.button {
+  width: auto;
+  color: black;
+  font-weight: 300;
+  border-radius: 4px;
+  padding: 4px;
+  margin: 3px;
+}
+
+.button:hover {
+  background-color: lightgrey;
+  cursor: pointer;
+}
+
+.row-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  margin: 3px;
+  padding: 8px;
+  border: solid gainsboro 1px;
+}
+.row-sub-container {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  background-color: aliceblue;
+  border: 0.3px solid gainsboro;
+}
+
+.row-sub-container > div {
+  overflow: hidden;
+  width: 20%;
+  font-weight: 500;
+  text-align: center;
+}
+
+.header-col {
+  margin: 2px;
+  border-radius: 5px;
+}
+
+#footer {
+  float: left;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.paginationItem {
+  background-color: white;
+  border: 2px solid white;
+  color: rgb(100, 99, 99);
+  padding: 10px 10px;
+  border-radius: 10%;
+  height: 20px;
+  width: 45px;
+  position: relative;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.paginationItem span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.prev,
+.next {
+  font-weight: 500;
+  border: 2px solid gray;
+  height: 25px;
+  color: black;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.paginationItem.active {
+  border: 1px solid #888;
+  color: black;
+  pointer-events: none;
+}
+
+.paginationItem:hover {
+  background-color: lightgray;
+  color: black;
+}
+
+.prev.disabled,
+.next.disabled {
+  pointer-events: none;
+  box-shadow: none;
+  color: #999;
+}
+
+.heading3 {
+  display: flex;
+  justify-content: center;
+}
+
+.del:hover {
+  background-color: lightgrey;
+  cursor: pointer;
+}
+
+.edit:hover {
+  background-color: lightgrey;
+  cursor: pointer;
+}
+
+.check:hover {
+  cursor: pointer;
+}
